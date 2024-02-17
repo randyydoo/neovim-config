@@ -4,6 +4,9 @@ local opt = vim.opt
 opt.number = true
 vim.cmd("set signcolumn=number")
 
+-- remove mode showing
+vim.cmd("set noshowmode")
+
 --tabs and indent
 opt.tabstop = 2
 opt.shiftwidth = 2
