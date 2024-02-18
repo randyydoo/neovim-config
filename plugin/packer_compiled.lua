@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["lualine-time"] = {
+    loaded = true,
+    path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/lualine-time",
+    url = "https://github.com/randyydoo/lualine-time"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
