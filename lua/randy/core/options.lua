@@ -4,6 +4,9 @@ local opt = vim.opt
 opt.number = true
 vim.cmd("set signcolumn=number")
 
+-- copy to clipboard
+vim.api.nvim_set_option("clipboard", "unnamed")
+
 -- remove mode showing
 vim.cmd("set noshowmode")
 
