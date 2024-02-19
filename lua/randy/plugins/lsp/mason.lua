@@ -31,6 +31,7 @@ mason_lspconfig.setup({
 		"quick_lint_js",
 		"clangd",
 		"tsserver",
+		"marksman",
 	},
 })
 

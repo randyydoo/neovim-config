@@ -201,6 +201,11 @@ _G.packer_plugins = {
     path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-matchup"] = {
+    loaded = true,
+    path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/randydo/.local/share/nvim/site/pack/packer/start/vim-surround",

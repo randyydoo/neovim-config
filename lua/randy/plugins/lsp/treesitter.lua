@@ -10,6 +10,12 @@ treesitter.setup({
 	highlight = {
 		enable = true,
 	},
+	-- matchup
+	matchup = {
+		enable = true, -- mandatory, false will disable the whole extension
+		disable = { "c", "c++", "python", "ruby" }, -- optional, list of language that will be disabled
+		-- [options]
+	},
 	-- enable indentation
 	indent = { enable = false },
 	-- enable autotagging (w/ nvim-ts-autotag plugin)
