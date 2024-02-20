@@ -87,6 +87,10 @@ lspconfig["quick_lint_js"].setup({
 lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16",
+	},
 })
 
 lspconfig["tsserver"].setup({

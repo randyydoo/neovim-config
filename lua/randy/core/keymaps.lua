@@ -22,4 +22,5 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tb", ":tabp<CR>") --  go to previous tab
 
 -- open treemap
+keymap.set("n", "<C-w>", "<C-w>w")
 keymap.set("n", "<leader><tab>", ":NvimTreeToggle<CR>")
