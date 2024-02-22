@@ -94,7 +94,7 @@ return packer.startup(function(use)
 	})
 
 	-- tab manager
-	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "tree/nvim-web-devicons" })
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
