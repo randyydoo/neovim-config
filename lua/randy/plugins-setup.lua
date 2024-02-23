@@ -96,6 +96,9 @@ return packer.startup(function(use)
 	-- tab manager
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "tree/nvim-web-devicons" })
 
+	-- blank lines
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
