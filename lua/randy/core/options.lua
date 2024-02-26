@@ -1,5 +1,5 @@
 local opt = vim.opt
-
+opt.termguicolors = true
 -- line numbers
 opt.number = true
 vim.cmd("set signcolumn=number")
