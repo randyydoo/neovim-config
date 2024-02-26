@@ -1,5 +1,6 @@
 local opt = vim.opt
 opt.termguicolors = true
+
 -- line numbers
 opt.number = true
 vim.cmd("set signcolumn=number")
@@ -23,9 +24,7 @@ opt.smartcase = true
 -- remove auto commenting next line
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 
--- guicolors
--- vim.cmd("set termguicolors")
--- vim.cmd("hi Normal ctermbg=NONE guibg=NONE")
--- vim.cmd("hi LineNr ctermbg=NONE guibg=NONE")
--- vim.cmd("hi SignColumn ctermbg=NONE guibg=NONE")
--- vim.cmd("let g:space_vim_dark_background = 234")
+-- tab colors
+-- vim.cmd("hi TabLineSel ctermbg=None guibg=Blue")
+-- vim.cmd("hi Tabline ctermbg=None guibg=Grey")
+-- vim.cmd("hi TabLineFill ctermbg=Green")
