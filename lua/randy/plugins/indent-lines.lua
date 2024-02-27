@@ -10,9 +10,10 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 require("ibl").setup({
-	indent = { highlight = highlight },
+	indent = { highlight = highlight, smart_indent_cap = true },
 	scope = {
-		enabled = false,
+		enabled = true,
 		show_start = false,
+		show_end = false,
 	},
 })
