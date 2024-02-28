@@ -12,7 +12,7 @@ treesitter.setup({
 	},
 	-- matchup
 	matchup = {
-		enable = true, -- mandatory, false will disable the whole extension
+		enable = false, -- mandatory, false will disable the whole extension
 		disable = { "c", "c++", "python", "ruby" }, -- optional, list of language that will be disabled
 		-- [options]
 	},

@@ -1,3 +1,8 @@
+local status, indent = pcall(require, "ibl")
+if not status then
+	return
+end
+
 local highlight = {
 	"grey",
 }
@@ -7,10 +12,16 @@ local hooks = require("ibl.hooks")
 -- every time the colorscheme changes
 hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
+	vim.api.nvim_set_hl(0, "grey", { fg = "#403d3d" })
 end)
 
-require("ibl").setup({
-	indent = { highlight = highlight, smart_indent_cap = true },
+indent.setup({
+	indent = { highlight = highlight, smart_indent_cap = false },
 	scope = {
 		enabled = true,
 		show_start = false,

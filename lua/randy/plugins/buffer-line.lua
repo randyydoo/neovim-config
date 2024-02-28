@@ -3,10 +3,10 @@ require("bufferline").setup({
 		mode = "tabs",
 		diagnostics = "nvim_lsp",
 		separator_style = "thick",
-		indicator = {
-			icon = "▎",
-			style = "icon",
-		},
+		-- indicator = {
+		-- 	icon = "▎",
+		-- 	style = "icon",
+		-- },
 		offsets = { { filetype = "NvimTree", text = "EXPLORER", text_align = "center" } },
 		show_buffer_close_icons = true,
 	},
@@ -61,4 +61,3 @@ require("bufferline").setup({
 -- 		indicator = {
 -- 		},
 -- 	},
--- })
