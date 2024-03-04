@@ -5,6 +5,8 @@ opt.termguicolors = true
 opt.number = true
 vim.cmd("set signcolumn=number")
 
+--blinking cursor insert mode
+vim.cmd("set guicursor=i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150")
 -- remove mode showing
 vim.cmd("set noshowmode")
 

@@ -21,7 +21,7 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 indent.setup({
-	indent = { highlight = highlight, smart_indent_cap = false },
+	indent = { highlight = highlight },
 	scope = {
 		enabled = true,
 		show_start = false,
