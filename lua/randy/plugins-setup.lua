@@ -38,6 +38,7 @@ return packer.startup(function(use)
 	-- use('crusoexia/vim-monokai')
 	-- use('liuchengxu/space-vim-dark')
 	use("Mofiqul/vscode.nvim")
+	-- use("datsfilipe/min-theme.nvim")
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
