@@ -95,6 +95,7 @@ return packer.startup(function(use)
 
 	-- tab manager
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "tree/nvim-web-devicons" })
+	-- use({ "nanozuki/tabby.nvim", requires = "tree/nvim-web-devicons" })
 
 	-- blank lines
 	use("lukas-reineke/indent-blankline.nvim")

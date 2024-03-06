@@ -7,6 +7,13 @@ end
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd([[
+        :hi      NvimTreeExecFile    guifg=#ffa0a0
+        :hi      NvimTreeSpecialFile guifg=#ff80ff gui=underline
+        :hi      NvimTreeSymlink     guifg=Yellow  gui=italic
+        :hi link NvimTreeImageFile   Title
+    ]])
+
 -- change color for arrows in tree to light blue
 nvimtree.setup({
 	renderer = {

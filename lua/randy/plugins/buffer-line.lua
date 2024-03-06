@@ -2,55 +2,30 @@ require("bufferline").setup({
 	options = {
 		mode = "tabs",
 		diagnostics = "nvim_lsp",
-		separator_style = "thick",
+		separator_style = "thin",
 		-- indicator = {
 		-- 	icon = "▎",
 		-- 	style = "icon",
 		-- },
-		offsets = { { filetype = "NvimTree", text = "EXPLORER", text_align = "center" } },
-		show_buffer_close_icons = true,
+		offsets = { { filetype = "NvimTree", text = "File Explorer", highlight = "Directory", text_align = "center" } },
+		show_buffer_close_icons = false,
 	},
 	highlights = {
 		fill = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "StatusLineNC" },
+			bg = "#333333",
 		},
-		background = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "StatusLine" },
-		},
-		buffer_visible = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "Normal" },
-		},
-		buffer_selected = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "Normal" },
-		},
-		separator = {
-			fg = { attribute = "bg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "StatusLine" },
-		},
-		separator_selected = {
-			fg = { attribute = "fg", highlight = "Special" },
-			bg = { attribute = "bg", highlight = "Normal" },
-		},
-		separator_visible = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "StatusLineNC" },
-		},
-		close_button = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "StatusLine" },
-		},
-		close_button_selected = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "Normal" },
-		},
-		close_button_visible = {
-			fg = { attribute = "fg", highlight = "Normal" },
-			bg = { attribute = "bg", highlight = "Normal" },
-		},
+		background = { bg = "#333333" },
+		tab = { bg = "#333333" },
+		tab_selected = { bg = "#181818" },
+		tab_close = { "#333333" },
+		close_button = { "#333333" },
+		diagnostic_selected = { bold = true },
+		info_selected = { bold = true },
+		info_diagnostic_selected = { bold = true },
+		warning_selected = { bold = true },
+		warning_diagnostic_selected = { bold = true },
+		error_selected = { bold = true },
+		error_diagnostic_selected = { bold = true },
 	},
 })
 
