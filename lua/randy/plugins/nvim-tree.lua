@@ -8,8 +8,10 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.cmd([[
-        :hi      NvimTreeExecFile    guifg=#ffa0a0
-        :hi      NvimTreeSpecialFile guifg=#ff80ff gui=underline
+        :hi      NvimTreeExecFile    guifg=#ffa0a0 gui=bold
+        :hi      NvimTreeFolderName    guifg=#0070C6 gui=bold
+        :hi      NvimTreeOpenedFolderName    guifg=#0070C6 gui=bold
+        :hi      NvimTreeSpecialFile guifg=#ff80ff
         :hi      NvimTreeSymlink     guifg=Yellow  gui=italic
         :hi link NvimTreeImageFile   Title
     ]])
@@ -22,7 +24,7 @@ nvimtree.setup({
 		full_name = false,
 		root_folder_label = ":~:s?$?/..?",
 		indent_width = 2,
-		special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+		special_files = { ".DS_Store", "Cargo.toml", "Makefile", "README.md", "readme.md" },
 		symlink_destination = true,
 		highlight_git = "none",
 		highlight_diagnostics = "none",
